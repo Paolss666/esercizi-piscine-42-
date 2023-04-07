@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: npaolett <npaolett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/04 17:27:34 by marvin            #+#    #+#             */
-/*   Updated: 2023/04/04 17:27:34 by marvin           ###   ########.fr       */
+/*   Created: 2023/04/06 16:21:58 by npaolett          #+#    #+#             */
+/*   Updated: 2023/04/06 16:21:58 by npaolett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <io.h> // #include <unistd.h> 
-
-void  ft_putchar(char c)
+int ft_strcmp(char *s1, char *s2)
 {
-  write(1, &c, 1);
-}
+  int i;
 
-void  ft_is_negative(int n)
-{
-  if(n < 0)
-    ft_putchar('N');
-  else
-    ft_putchar('P');
+  i = 0;
+  while (s1[i] && s2[i] && s1[i] == s2[i])
+  {
+    i++;
+  }
+  return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }

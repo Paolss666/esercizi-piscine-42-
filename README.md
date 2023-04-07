@@ -1,2 +1,2 @@
-# esercizi-piscine-42-
-repository con per ripassso esercizi della piscina a L école 42 Paris 
+#piscine-42-
+Repository----révision modules Piscine  Février école 42 Paris. 
